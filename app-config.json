@@ -1,0 +1,1427 @@
+{
+  "subPackages": [
+    {
+      "root": "package_user/",
+      "name": "package_user"
+    },
+    {
+      "root": "package_other/",
+      "name": "package_other",
+      "plugins": {
+        "live-player-plugin": {
+          "version": "1.2.0",
+          "provider": "wx2b03c6e691cd7370",
+          "subpackage": "/package_other/"
+        },
+        "audt-plugin": {
+          "version": "2.0.0",
+          "provider": "wx16cb6e257ec0d70f",
+          "subpackage": "/package_other/"
+        }
+      }
+    },
+    {
+      "root": "package_ticket/",
+      "name": "package_ticket"
+    }
+  ],
+  "entryPagePath": "pages/ticket/index/index.html",
+  "pages": [
+    "pages/ticket/index/index",
+    "pages/travel/list/list",
+    "pages/user/index/index",
+    "pages/order/list/list",
+    "pages/order/detail/detail",
+    "pages/common/calendar/calendar",
+    "pages/common/city/city",
+    "pages/common/external/external",
+    "pages/common/auth/auth",
+    "pages/checkin/index/index",
+    "pages/checkin/list/list",
+    "pages/checkin/record/record",
+    "pages/checkin/seat/seat",
+    "pages/checkin/result/result",
+    "pages/checkin/partner/partner",
+    "pages/checkin/recordDetail/recordDetail",
+    "pages/order/upgrade/list/list",
+    "pages/order/upgrade/flight/flight",
+    "pages/order/upgrade/cabin/cabin",
+    "pages/order/upgrade/record/record",
+    "pages/order/upgrade/confirm/confirm",
+    "pages/order/upgrade/detail/detail",
+    "pages/order/refund/list/list",
+    "pages/order/refund/type/type",
+    "pages/order/refund/apply/apply",
+    "pages/order/refund/result/result",
+    "pages/order/refund/record/record",
+    "pages/order/refund/detail/detail",
+    "pages/order/error/list/list",
+    "pages/order/error/detail/detail",
+    "pages/order/error/result/result",
+    "pages/travel/add/add",
+    "pages/order/payResult/payResult",
+    "pages/order/insurance/insurance",
+    "pages/flight_dynamics/list/list",
+    "pages/flight_dynamics/detail/detail",
+    "pages/flight_dynamics/attention/attention",
+    "pages/flight_dynamics/cabinMap/cabinMap",
+    "pages/flight_dynamics/index/index",
+    "pages/common/error/error",
+    "pages/travel/customize/index/index",
+    "pages/travel/customize/list/list",
+    "pages/order/upgrade/unusual/unusual",
+    "pages/order/upgrade/passenger/passenger",
+    "pages/order/luggage/list/list",
+    "pages/order/luggage/result/result",
+    "pages/order/luggage/type/type",
+    "pages/common/selfService/index",
+    "package_user/pages/login/login",
+    "package_user/pages/register/register",
+    "package_user/pages/result/result",
+    "package_user/pages/passengers/index/index",
+    "package_user/pages/passengers/info/info",
+    "package_user/pages/passengers/infoInternational/infoInternational",
+    "package_user/pages/coupon/list/list",
+    "package_user/pages/coupon/bind/bind",
+    "package_user/pages/changePassword/changePassword",
+    "package_user/pages/retrievePassword/retrievePassword",
+    "package_user/pages/authenticate/unionpay/unionpay",
+    "package_user/pages/authenticate/wechat/wechat",
+    "package_user/pages/travelHelp/index/index",
+    "package_user/pages/travelHelp/list/list",
+    "package_user/pages/flightDelay/index/index",
+    "package_user/pages/flightDelay/indexNum/indexNum",
+    "package_user/pages/flightDelay/result/result",
+    "package_user/pages/coupon/receive/receive",
+    "package_user/pages/authenticate/result/result",
+    "package_user/pages/article/list/list",
+    "package_user/pages/userAward/address/address",
+    "package_user/pages/userAward/list/list",
+    "package_user/pages/product/productBuy/productBuy",
+    "package_user/pages/product/productBuyDetail/productBuyDetail",
+    "package_user/pages/product/productPaid/productPaid",
+    "package_user/pages/product/productDetail/productDetail",
+    "package_user/pages/product/productUsedDetail/productUsedDetail",
+    "package_user/pages/product/productSearch/productSearch",
+    "package_user/pages/product/productList/productList",
+    "package_user/pages/product/productInfo/productInfo",
+    "package_user/pages/product/listBack/listBack",
+    "package_user/pages/product/productFill/productFill",
+    "package_user/pages/product/error/error",
+    "package_user/pages/product/error/detail",
+    "package_user/pages/luggage/search/search",
+    "package_user/pages/luggage/choose/choose",
+    "package_user/pages/luggage/list/list",
+    "package_user/pages/luggage/otherService/otherService",
+    "package_user/pages/invoice/index/index",
+    "package_user/pages/invoice/invoicing/invoicing",
+    "package_user/pages/invoice/orderSave/orderSave",
+    "package_user/pages/invoice/invoiceResult/result",
+    "package_other/pages/live/index",
+    "package_other/pages/video/index",
+    "package_other/pages/vipDoc/index",
+    "package_other/pages/changeUpgrade/index/index",
+    "package_other/pages/changeUpgrade/list/list",
+    "package_other/pages/changeUpgrade/fill/fill",
+    "package_other/pages/order/list/list",
+    "package_other/pages/order/detail/detail",
+    "package_other/pages/h5Pay/pay",
+    "package_other/pages/announcement/list/list",
+    "package_other/pages/announcement/detail/detail",
+    "package_other/pages/activity/list/index",
+    "package_other/pages/activity/index/index",
+    "package_other/pages/activity/add/index",
+    "package_other/pages/activity/detail/index",
+    "package_other/pages/activity/shop/fill/fill",
+    "package_other/pages/activity/shop/list/list",
+    "package_other/pages/activity/shop/detail/detail",
+    "package_other/pages/activity/shop/payResult/payResult",
+    "package_other/pages/specialService/index/index",
+    "package_other/pages/specialService/specialFood/index/index",
+    "package_other/pages/specialService/specialWheelchair/index/index",
+    "package_other/pages/specialService/specialFood/seletLeg/index",
+    "package_other/pages/specialService/specialFood/seletFood/index",
+    "package_other/pages/specialService/specialWheelchair/seletLeg/index",
+    "package_other/pages/specialService/specialWheelchair/applyService/index",
+    "package_other/pages/activity/point/list/list",
+    "package_other/pages/activity/point/detail/detail",
+    "package_other/pages/activity/point/word/word",
+    "package_other/pages/activity/point/assist/assist",
+    "package_other/pages/activity/point/assistPost/index",
+    "package_other/pages/activity/point/exchange/index",
+    "package_other/pages/activity/point/exchange/detail",
+    "package_other/pages/activity/point/exchange/address",
+    "package_other/pages/activity/point/exchange/orderDetail",
+    "package_other/__plugin__/wx2b03c6e691cd7370/pages/live-player-plugin",
+    "package_other/__plugin__/wx2b03c6e691cd7370/wxlive-components/ext-player/address-preview/address-preview",
+    "package_other/__plugin__/wx2b03c6e691cd7370/wxlive-components/ext-player/complaint-comment/complaint-comment",
+    "package_other/__plugin__/wx2b03c6e691cd7370/wxlive-components/ext-player/complaint-room/complaint-room",
+    "package_other/__plugin__/wx16cb6e257ec0d70f/pages/home/index",
+    "package_other/__plugin__/wx16cb6e257ec0d70f/pages/category/index",
+    "package_other/__plugin__/wx16cb6e257ec0d70f/pages/good/list/index",
+    "package_other/__plugin__/wx16cb6e257ec0d70f/pages/good/detail/index",
+    "package_other/__plugin__/wx16cb6e257ec0d70f/pages/aviation/eticket/index",
+    "package_other/__plugin__/wx16cb6e257ec0d70f/pages/aviation/select/index",
+    "package_other/__plugin__/wx16cb6e257ec0d70f/pages/insurance/fill/index",
+    "package_other/__plugin__/wx16cb6e257ec0d70f/pages/order/confirm/index",
+    "package_other/__plugin__/wx16cb6e257ec0d70f/pages/pay/index",
+    "package_other/__plugin__/wx16cb6e257ec0d70f/pages/order/complete/index",
+    "package_other/__plugin__/wx16cb6e257ec0d70f/pages/service/index",
+    "package_other/__plugin__/wx16cb6e257ec0d70f/pages/order/list/index",
+    "package_other/__plugin__/wx16cb6e257ec0d70f/pages/order/detail/index",
+    "package_other/__plugin__/wx16cb6e257ec0d70f/pages/insurance/detail/index",
+    "package_other/__plugin__/wx16cb6e257ec0d70f/pages/aviation/flight/index",
+    "package_ticket/pages/ticket/list/list",
+    "package_ticket/pages/ticket/listBack/listBack",
+    "package_ticket/pages/ticket/info/info",
+    "package_ticket/pages/ticket/fill/fill",
+    "package_ticket/pages/ticket/pay/pay",
+    "package_ticket/pages/ticket/otherService/otherService",
+    "package_ticket/pages/ticket/luggage/luggage",
+    "package_ticket/pages/ticket_special/index/index"
+  ],
+  "page": {
+    "pages/ticket/index/index.html": {
+      "window": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom"
+      }
+    },
+    "pages/travel/list/list.html": {
+      "window": {
+        "navigationBarTitleText": "行程列表",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": true
+      }
+    },
+    "pages/user/index/index.html": {
+      "window": {
+        "navigationBarTitleText": "个人中心",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "pages/order/list/list.html": {
+      "window": {
+        "navigationBarTitleText": "机票订单",
+        "enablePullDownRefresh": true,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "pages/order/detail/detail.html": {
+      "window": {
+        "navigationBarTitleText": "订单详情",
+        "enablePullDownRefresh": true,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "pages/common/calendar/calendar.html": {
+      "window": {
+        "navigationBarTitleText": "日期选择",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": false
+      }
+    },
+    "pages/common/city/city.html": {
+      "window": {
+        "navigationBarTitleText": "选择城市机场",
+        "enablePullDownRefresh": false
+      }
+    },
+    "pages/common/external/external.html": {
+      "window": {
+        "enablePullDownRefresh": false
+      }
+    },
+    "pages/common/auth/auth.html": {
+      "window": {
+        "navigationBarTitleText": "西藏航空",
+        "enablePullDownRefresh": false
+      }
+    },
+    "pages/checkin/index/index.html": {
+      "window": {
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "pages/checkin/list/list.html": {
+      "window": {
+        "navigationBarTitleText": "确认行程",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": true
+      }
+    },
+    "pages/checkin/record/record.html": {
+      "window": {
+        "navigationBarTitleText": "值机记录",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "pages/checkin/seat/seat.html": {
+      "window": {
+        "navigationBarTitleText": "选择座位",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": false
+      }
+    },
+    "pages/checkin/result/result.html": {
+      "window": {
+        "navigationBarTitleText": "值机结果",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": false
+      }
+    },
+    "pages/checkin/partner/partner.html": {
+      "window": {
+        "navigationBarTitleText": "添加同行人",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": false
+      }
+    },
+    "pages/checkin/recordDetail/recordDetail.html": {
+      "window": {
+        "navigationBarTitleText": "电子登机牌",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "pages/order/upgrade/list/list.html": {
+      "window": {
+        "navigationBarTitleText": "选择改期客票",
+        "enablePullDownRefresh": true,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "pages/order/upgrade/flight/flight.html": {
+      "window": {
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "pages/order/upgrade/cabin/cabin.html": {
+      "window": {
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "pages/order/upgrade/record/record.html": {
+      "window": {
+        "navigationBarTitleText": "改升记录",
+        "enablePullDownRefresh": true,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "pages/order/upgrade/confirm/confirm.html": {
+      "window": {
+        "navigationBarTitleText": "改升信息确认",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "pages/order/upgrade/detail/detail.html": {
+      "window": {
+        "navigationBarTitleText": "改升详情",
+        "enablePullDownRefresh": true,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "pages/order/refund/list/list.html": {
+      "window": {
+        "navigationBarTitleText": "选择退票客票",
+        "enablePullDownRefresh": true,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "pages/order/refund/type/type.html": {
+      "window": {
+        "navigationBarTitleText": "选择退票类型",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "pages/order/refund/apply/apply.html": {
+      "window": {
+        "navigationBarTitleText": "确定退票信息",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "pages/order/refund/result/result.html": {
+      "window": {
+        "navigationBarTitleText": "退票结果",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "pages/order/refund/record/record.html": {
+      "window": {
+        "navigationBarTitleText": "退票记录",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "pages/order/refund/detail/detail.html": {
+      "window": {
+        "navigationBarTitleText": "退票详情",
+        "enablePullDownRefresh": true,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "pages/order/error/list/list.html": {
+      "window": {
+        "navigationBarTitleText": "申请差错退款",
+        "enablePullDownRefresh": true,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "pages/order/error/detail/detail.html": {
+      "window": {
+        "navigationBarTitleText": "申请差错退款",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "pages/order/error/result/result.html": {
+      "window": {
+        "navigationBarTitleText": "申请差错退款",
+        "enablePullDownRefresh": true,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "pages/travel/add/add.html": {
+      "window": {
+        "navigationBarTitleText": "添加行程",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "pages/order/payResult/payResult.html": {
+      "window": {
+        "navigationBarTitleText": "支付结果",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "pages/order/insurance/insurance.html": {
+      "window": {
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "pages/flight_dynamics/list/list.html": {
+      "window": {
+        "navigationBarTitleText": "加载中",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "pages/flight_dynamics/detail/detail.html": {
+      "window": {
+        "navigationBarTitleText": "加载中",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "pages/flight_dynamics/attention/attention.html": {
+      "window": {
+        "navigationBarTitleText": "关注航班",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "pages/flight_dynamics/cabinMap/cabinMap.html": {
+      "window": {
+        "navigationBarTitleText": "舱位图",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "pages/flight_dynamics/index/index.html": {
+      "window": {
+        "navigationBarTitleText": "航班动态",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "pages/common/error/error.html": {
+      "window": {
+        "enablePullDownRefresh": false
+      }
+    },
+    "pages/travel/customize/index/index.html": {
+      "window": {
+        "navigationBarTitleText": "旅行定制",
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom"
+      }
+    },
+    "pages/travel/customize/list/list.html": {
+      "window": {
+        "navigationBarTitleText": "低价提醒",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "pages/order/upgrade/unusual/unusual.html": {
+      "window": {
+        "navigationBarTitleText": "不正常航班改期",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "pages/order/upgrade/passenger/passenger.html": {
+      "window": {
+        "navigationBarTitleText": "修改改期乘机人",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": false
+      }
+    },
+    "pages/order/luggage/list/list.html": {
+      "window": {
+        "navigationBarTitleText": "附加服务",
+        "enablePullDownRefresh": true,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "pages/order/luggage/result/result.html": {
+      "window": {
+        "navigationBarTitleText": "预付费行李退订",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "pages/order/luggage/type/type.html": {
+      "window": {
+        "navigationBarTitleText": "预付费行李退订",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "pages/common/selfService/index.html": {
+      "window": {
+        "navigationBarTitleText": "自助服务",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_user/pages/login/login.html": {
+      "window": {
+        "navigationBarTitleText": "登录",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": false
+      }
+    },
+    "package_user/pages/register/register.html": {
+      "window": {
+        "navigationBarTitleText": "会员注册",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": false
+      }
+    },
+    "package_user/pages/result/result.html": {
+      "window": {
+        "navigationBarTitleText": "注册结果",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": false
+      }
+    },
+    "package_user/pages/passengers/index/index.html": {
+      "window": {
+        "navigationBarTitleText": "常用乘机人",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": false
+      }
+    },
+    "package_user/pages/passengers/info/info.html": {
+      "window": {
+        "navigationBarTitleText": "国内乘机人",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": false
+      }
+    },
+    "package_user/pages/passengers/infoInternational/infoInternational.html": {
+      "window": {
+        "navigationBarTitleText": "国际乘机人",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": false
+      }
+    },
+    "package_user/pages/coupon/list/list.html": {
+      "window": {
+        "navigationBarTitleText": "优惠券",
+        "enablePullDownRefresh": true,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_user/pages/coupon/bind/bind.html": {
+      "window": {
+        "navigationBarTitleText": "激活优惠码",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_user/pages/changePassword/changePassword.html": {
+      "window": {
+        "navigationBarTitleText": "修改密码",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": false
+      }
+    },
+    "package_user/pages/retrievePassword/retrievePassword.html": {
+      "window": {
+        "navigationBarTitleText": "忘记密码",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": false
+      }
+    },
+    "package_user/pages/authenticate/unionpay/unionpay.html": {
+      "window": {
+        "navigationBarTitleText": "银联实名认证",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_user/pages/authenticate/wechat/wechat.html": {
+      "window": {
+        "navigationBarTitleText": "微信实名认证",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_user/pages/travelHelp/index/index.html": {
+      "window": {
+        "navigationBarTitleText": "出行帮助",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": false
+      }
+    },
+    "package_user/pages/travelHelp/list/list.html": {
+      "window": {
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": false
+      }
+    },
+    "package_user/pages/flightDelay/index/index.html": {
+      "window": {
+        "navigationBarTitleText": "航班延误取消证明",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_user/pages/flightDelay/indexNum/indexNum.html": {
+      "window": {
+        "navigationBarTitleText": "航班延误取消证明",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_user/pages/flightDelay/result/result.html": {
+      "window": {
+        "navigationBarTitleText": "航班不正常证明",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_user/pages/coupon/receive/receive.html": {
+      "window": {
+        "navigationBarTitleText": "领券中心",
+        "enablePullDownRefresh": true,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_user/pages/authenticate/result/result.html": {
+      "window": {}
+    },
+    "package_user/pages/article/list/list.html": {
+      "window": {
+        "navigationBarTitleText": "我的图文活动",
+        "enablePullDownRefresh": true,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_user/pages/userAward/address/address.html": {
+      "window": {
+        "navigationBarTitleText": "修改密码",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": false
+      }
+    },
+    "package_user/pages/userAward/list/list.html": {
+      "window": {
+        "navigationBarTitleText": "我的奖品",
+        "enablePullDownRefresh": true,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_user/pages/product/productBuy/productBuy.html": {
+      "window": {
+        "navigationBarTitleText": "套票券销售",
+        "enablePullDownRefresh": true,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_user/pages/product/productBuyDetail/productBuyDetail.html": {
+      "window": {
+        "navigationBarTitleText": "填写订单",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_user/pages/product/productPaid/productPaid.html": {
+      "window": {
+        "navigationBarTitleText": "支付订单",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_user/pages/product/productDetail/productDetail.html": {
+      "window": {
+        "navigationBarTitleText": "订单详情",
+        "enablePullDownRefresh": true,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_user/pages/product/productUsedDetail/productUsedDetail.html": {
+      "window": {}
+    },
+    "package_user/pages/product/productSearch/productSearch.html": {
+      "window": {}
+    },
+    "package_user/pages/product/productList/productList.html": {
+      "window": {
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_user/pages/product/productInfo/productInfo.html": {
+      "window": {
+        "navigationBarTitleText": "航班详情",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_user/pages/product/listBack/listBack.html": {
+      "window": {
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_user/pages/product/productFill/productFill.html": {
+      "window": {
+        "navigationBarTitleText": "添加乘机信息",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_user/pages/product/error/error.html": {
+      "window": {
+        "navigationBarTitleText": "申请差错退款",
+        "enablePullDownRefresh": true,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_user/pages/product/error/detail.html": {
+      "window": {
+        "navigationBarTitleText": "申请差错退款",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_user/pages/luggage/search/search.html": {
+      "window": {
+        "enablePullDownRefresh": false,
+        "navigationBarTitleText": "行李预订",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_user/pages/luggage/choose/choose.html": {
+      "window": {
+        "navigationBarTitleText": "行李购买",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_user/pages/luggage/list/list.html": {
+      "window": {
+        "enablePullDownRefresh": false,
+        "navigationBarTitleText": "行程选择",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_user/pages/luggage/otherService/otherService.html": {
+      "window": {
+        "navigationBarTitleText": "附加服务",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_user/pages/invoice/index/index.html": {
+      "window": {
+        "navigationBarTitleText": "电子发票",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_user/pages/invoice/invoicing/invoicing.html": {
+      "window": {
+        "navigationBarTitleText": "电子发票",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_user/pages/invoice/orderSave/orderSave.html": {
+      "window": {
+        "navigationBarTitleText": "电子发票",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_user/pages/invoice/invoiceResult/result.html": {
+      "window": {
+        "navigationBarTitleText": "电子发票",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_other/pages/live/index.html": {
+      "window": {
+        "navigationBarTitleText": "直播",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_other/pages/video/index.html": {
+      "window": {
+        "navigationBarTitleText": "直播",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_other/pages/vipDoc/index.html": {
+      "window": {
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": false
+      }
+    },
+    "package_other/pages/changeUpgrade/index/index.html": {
+      "window": {
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_other/pages/changeUpgrade/list/list.html": {
+      "window": {
+        "navigationBarTitleText": "可升舱行程",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": false
+      }
+    },
+    "package_other/pages/changeUpgrade/fill/fill.html": {
+      "window": {
+        "navigationBarTitleText": "订单填写",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": false
+      }
+    },
+    "package_other/pages/order/list/list.html": {
+      "window": {
+        "navigationBarTitleText": "其他订单",
+        "enablePullDownRefresh": true,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_other/pages/order/detail/detail.html": {
+      "window": {
+        "navigationBarTitleText": "订单详情",
+        "enablePullDownRefresh": true,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_other/pages/h5Pay/pay.html": {
+      "window": {
+        "navigationBarTitleText": "订单确认支付",
+        "enablePullDownRefresh": false
+      }
+    },
+    "package_other/pages/announcement/list/list.html": {
+      "window": {
+        "navigationBarTitleText": "服务公告",
+        "enablePullDownRefresh": true,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_other/pages/announcement/detail/detail.html": {
+      "window": {
+        "navigationBarTitleText": "服务公告",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_other/pages/activity/list/index.html": {
+      "window": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom"
+      }
+    },
+    "package_other/pages/activity/index/index.html": {
+      "window": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom"
+      }
+    },
+    "package_other/pages/activity/add/index.html": {
+      "window": {
+        "navigationBarTitleText": "发布文章",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_other/pages/activity/detail/index.html": {
+      "window": {
+        "navigationBarTitleText": "文章详情",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_other/pages/activity/shop/fill/fill.html": {
+      "window": {
+        "navigationBarTitleText": "订单填写",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": false
+      }
+    },
+    "package_other/pages/activity/shop/list/list.html": {
+      "window": {
+        "navigationBarTitleText": "营销活动订单",
+        "enablePullDownRefresh": true,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_other/pages/activity/shop/detail/detail.html": {
+      "window": {
+        "navigationBarTitleText": "订单详情",
+        "enablePullDownRefresh": true,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_other/pages/activity/shop/payResult/payResult.html": {
+      "window": {
+        "navigationBarTitleText": "支付结果",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_other/pages/specialService/index/index.html": {
+      "window": {
+        "navigationBarTitleText": "特殊旅客服务",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_other/pages/specialService/specialFood/index/index.html": {
+      "window": {
+        "navigationBarTitleText": "特殊餐食服务",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_other/pages/specialService/specialWheelchair/index/index.html": {
+      "window": {
+        "navigationBarTitleText": "轮椅服务",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_other/pages/specialService/specialFood/seletLeg/index.html": {
+      "window": {
+        "navigationBarTitleText": "申请航段",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_other/pages/specialService/specialFood/seletFood/index.html": {
+      "window": {
+        "navigationBarTitleText": "服务申请",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_other/pages/specialService/specialWheelchair/seletLeg/index.html": {
+      "window": {
+        "navigationBarTitleText": "申请航段",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_other/pages/specialService/specialWheelchair/applyService/index.html": {
+      "window": {
+        "navigationBarTitleText": "服务申请",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_other/pages/activity/point/list/list.html": {
+      "window": {
+        "navigationBarTitleText": "做任务，得积分",
+        "enablePullDownRefresh": true,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_other/pages/activity/point/detail/detail.html": {
+      "window": {
+        "navigationBarTitleText": "积分明细",
+        "enablePullDownRefresh": true,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_other/pages/activity/point/word/word.html": {
+      "window": {
+        "navigationBarTitleText": "口令寻宝",
+        "enablePullDownRefresh": true,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_other/pages/activity/point/assist/assist.html": {
+      "window": {
+        "navigationBarTitleText": "助力任务",
+        "enablePullDownRefresh": true,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_other/pages/activity/point/assistPost/index.html": {
+      "window": {
+        "navigationBarTitleText": "助力任务",
+        "enablePullDownRefresh": true,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_other/pages/activity/point/exchange/index.html": {
+      "window": {
+        "navigationBarTitleText": "奖品兑换",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_other/pages/activity/point/exchange/detail.html": {
+      "window": {
+        "navigationBarTitleText": "奖品详情",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_other/pages/activity/point/exchange/address.html": {
+      "window": {
+        "navigationBarTitleText": "收货信息",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_other/pages/activity/point/exchange/orderDetail.html": {
+      "window": {
+        "navigationBarTitleText": "订单详情",
+        "enablePullDownRefresh": true,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_ticket/pages/ticket/list/list.html": {
+      "window": {
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_ticket/pages/ticket/listBack/listBack.html": {
+      "window": {
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_ticket/pages/ticket/info/info.html": {
+      "window": {
+        "navigationBarTitleText": "航班详情",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_ticket/pages/ticket/fill/fill.html": {
+      "window": {
+        "navigationBarTitleText": "添加乘机信息",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_ticket/pages/ticket/pay/pay.html": {
+      "window": {
+        "navigationBarTitleText": "订单确认支付",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_ticket/pages/ticket/otherService/otherService.html": {
+      "window": {
+        "navigationBarTitleText": "附加服务",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_ticket/pages/ticket/luggage/luggage.html": {
+      "window": {
+        "navigationBarTitleText": "预付费行李",
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_ticket/pages/ticket_special/index/index.html": {
+      "window": {
+        "navigationBarTitleText": "特价机票",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#C20000",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    "package_other/__plugin__/wx2b03c6e691cd7370/pages/live-player-plugin.html": {
+      "window": {
+        "usingComponents": {
+          "page-live-player": "../wxlive-components/page-live-player/page-live-player",
+          "page-live-replay": "../wxlive-components/page-live-replay/page-live-replay",
+          "page-live-record": "../wxlive-components/page-live-record/page-live-record",
+          "component-profile-card": "../wxlive-components/profile-card-player/profile-card-player",
+          "component-person-operation": "../wxlive-components/person-operation/person-operation",
+          "component-comments": "../wxlive-components/comments/comments",
+          "component-store-list-player": "../wxlive-components/store-list-player/store-list-player",
+          "component-profile-modal": "../wxlive-components/profile-modal/profile-modal",
+          "component-barrage-list": "../wxlive-components/barrage-list/barrage-list",
+          "component-goods-push": "../wxlive-components/goods-push/goods-push",
+          "component-coupon-push": "../wxlive-components/coupon-push/coupon-push",
+          "component-push-comment": "../wxlive-components/push-comment/push-comment",
+          "component-end-block": "../wxlive-components/end-block/end-block",
+          "component-subscribe-card": "../wxlive-components/subscribe-card/subscribe-card",
+          "component-forbid-user-list": "../wxlive-components/forbid-user-list/forbid-user-list",
+          "component-lottery-oper-player": "../wxlive-components/lottery-oper-player/lottery-oper-player",
+          "component-lottery-player": "../wxlive-components/lottery-player/lottery-player",
+          "component-comment-action-sheet": "../wxlive-components/comment-action-sheet/comment-action-sheet",
+          "component-top-player": "../wxlive-components/top-player/top-player",
+          "component-operate-paster": "../wxlive-components/operate-paster/operate-paster",
+          "component-attention-guide": "../wxlive-components/attention-guide/attention-guide",
+          "component-setting-more": "../wxlive-components/setting-more/setting-more",
+          "component-nudge-list": "../wxlive-components/nudge-list/nudge-list",
+          "component-share-panel": "../wxlive-components/share-panel/share-panel",
+          "mp-icon": "../miniprogram_dist/icon/icon"
+        },
+        "navigationStyle": "custom",
+        "backgroundColor": "#1d1f48",
+        "disableScroll": true,
+        "style": "v2",
+        "navigationBarTextStyle": "white",
+        "singlePage": {
+          "navigationBarBackgroundColor": "#000000",
+          "navigationBarBackgroundAlpha": 0,
+          "navigationBarTextStyle": "white"
+        }
+      }
+    },
+    "package_other/__plugin__/wx2b03c6e691cd7370/wxlive-components/ext-player/address-preview/address-preview.html": {
+      "window": {
+        "usingComponents": {
+          "mp-msg": "../../../miniprogram_dist/msg/msg",
+          "mp-navigation-bar": "../../../miniprogram_dist/navigation-bar/navigation-bar"
+        },
+        "navigationStyle": "custom",
+        "disableScroll": true,
+        "style": "v2"
+      }
+    },
+    "package_other/__plugin__/wx2b03c6e691cd7370/wxlive-components/ext-player/complaint-comment/complaint-comment.html": {
+      "window": {
+        "usingComponents": {
+          "mp-msg": "../../../miniprogram_dist/msg/msg",
+          "mp-checkbox-group": "../../../miniprogram_dist/checkbox-group/checkbox-group",
+          "mp-checkbox": "../../../miniprogram_dist/checkbox/checkbox",
+          "mp-cells": "../../../miniprogram_dist/cells/cells",
+          "mp-navigation-bar": "../../../miniprogram_dist/navigation-bar/navigation-bar"
+        },
+        "navigationStyle": "custom",
+        "disableScroll": true,
+        "style": "v2"
+      }
+    },
+    "package_other/__plugin__/wx2b03c6e691cd7370/wxlive-components/ext-player/complaint-room/complaint-room.html": {
+      "window": {
+        "usingComponents": {
+          "mp-msg": "../../../miniprogram_dist/msg/msg",
+          "mp-checkbox-group": "../../../miniprogram_dist/checkbox-group/checkbox-group",
+          "mp-checkbox": "../../../miniprogram_dist/checkbox/checkbox",
+          "mp-cells": "../../../miniprogram_dist/cells/cells",
+          "mp-navigation-bar": "../../../miniprogram_dist/navigation-bar/navigation-bar"
+        },
+        "navigationStyle": "custom",
+        "disableScroll": true,
+        "style": "v2"
+      }
+    },
+    "package_other/__plugin__/wx16cb6e257ec0d70f/pages/home/index.html": {
+      "window": {
+        "navigationStyle": "default",
+        "renderer": "webview"
+      }
+    },
+    "package_other/__plugin__/wx16cb6e257ec0d70f/pages/category/index.html": {
+      "window": {
+        "navigationStyle": "default",
+        "renderer": "webview"
+      }
+    },
+    "package_other/__plugin__/wx16cb6e257ec0d70f/pages/good/list/index.html": {
+      "window": {
+        "navigationStyle": "default",
+        "renderer": "webview"
+      }
+    },
+    "package_other/__plugin__/wx16cb6e257ec0d70f/pages/good/detail/index.html": {
+      "window": {
+        "navigationStyle": "default",
+        "renderer": "webview"
+      }
+    },
+    "package_other/__plugin__/wx16cb6e257ec0d70f/pages/aviation/eticket/index.html": {
+      "window": {
+        "navigationStyle": "default",
+        "renderer": "webview"
+      }
+    },
+    "package_other/__plugin__/wx16cb6e257ec0d70f/pages/aviation/select/index.html": {
+      "window": {
+        "navigationStyle": "default",
+        "renderer": "webview"
+      }
+    },
+    "package_other/__plugin__/wx16cb6e257ec0d70f/pages/insurance/fill/index.html": {
+      "window": {
+        "navigationStyle": "default",
+        "renderer": "webview"
+      }
+    },
+    "package_other/__plugin__/wx16cb6e257ec0d70f/pages/order/confirm/index.html": {
+      "window": {
+        "navigationStyle": "default",
+        "renderer": "webview"
+      }
+    },
+    "package_other/__plugin__/wx16cb6e257ec0d70f/pages/pay/index.html": {
+      "window": {
+        "navigationStyle": "default",
+        "renderer": "webview"
+      }
+    },
+    "package_other/__plugin__/wx16cb6e257ec0d70f/pages/order/complete/index.html": {
+      "window": {
+        "navigationStyle": "default",
+        "renderer": "webview"
+      }
+    },
+    "package_other/__plugin__/wx16cb6e257ec0d70f/pages/service/index.html": {
+      "window": {
+        "navigationStyle": "default",
+        "renderer": "webview"
+      }
+    },
+    "package_other/__plugin__/wx16cb6e257ec0d70f/pages/order/list/index.html": {
+      "window": {
+        "navigationStyle": "default",
+        "renderer": "webview"
+      }
+    },
+    "package_other/__plugin__/wx16cb6e257ec0d70f/pages/order/detail/index.html": {
+      "window": {
+        "navigationStyle": "default",
+        "renderer": "webview"
+      }
+    },
+    "package_other/__plugin__/wx16cb6e257ec0d70f/pages/insurance/detail/index.html": {
+      "window": {
+        "navigationStyle": "default",
+        "renderer": "webview"
+      }
+    },
+    "package_other/__plugin__/wx16cb6e257ec0d70f/pages/aviation/flight/index.html": {
+      "window": {
+        "navigationStyle": "default",
+        "renderer": "webview"
+      }
+    }
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于获取附近机场"
+    }
+  },
+  "global": {
+    "window": {
+      "backgroundColor": "#F6F6F6",
+      "backgroundTextStyle": "light",
+      "navigationBarBackgroundColor": "#F6F6F6",
+      "navigationBarTitleText": "西藏航空",
+      "navigationBarTextStyle": "black"
+    }
+  },
+  "networkTimeout": {
+    "request": 120000
+  },
+  "plugins": {
+    "live-player-plugin": {
+      "version": "1.2.0",
+      "provider": "wx2b03c6e691cd7370",
+      "subpackage": "/package_other/"
+    },
+    "audt-plugin": {
+      "version": "2.0.0",
+      "provider": "wx16cb6e257ec0d70f",
+      "subpackage": "/package_other/"
+    }
+  },
+  "tabBar": {
+    "color": "#7F8389",
+    "selectedColor": "#C20000",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/ticket/index/index.html",
+        "text": "首页",
+        "iconData": "iVBORw0KGgoAAAANSUhEUgAAAFIAAABUCAYAAAARdWCGAAALLklEQVR42u2caVRTZxrHXwRkTXJz07ogIcGiAuNRW+k4Y6tjXVq16oz16Mzo2N0FJIs6VM+4RT3Wra3VKlo9tVql7guLbAHjtG7TQ3XsuKAokIUirq1LhZvc+87zXgiGkECAfijJfc55zv2QT/md/7O+770ICSaYYIL5nmGE/EujJNMFEm00k0K6okIh2yiQaIMZoyiVRSnjShXSFIFGK61cIU0yK2kbgMTGKOkYgUjLc6JfuYJeZlbIbOUEopJmbkQERwlkWmAXOqMwk5L+0ggAy+scVHkFfvIT6Hho1yPFMQDxO5MDRAIUio1QaDy1sijqLVDe/XIHiMR5qArJUIFQM1YsD42wKOn9AIxzhlgX1sWQMwMEUu4LSocyOfU2VOQqowuAdjXekFNzBFpurDRS2gdUmG9yA/CpGmU/ltBILBBzsivdRDII1U9BhU/Km4FYmxulSQI1ByuKQKFGJaU1K6W3jM0AfAqSPlOEUKBAD8wARQJUNQVUeNXkIcC6AvOzOVLcw+cB6qCQlCvErzv3hJ5BhGkG4AvzMfR8FgV9sqUA68KZA4gLfHxLIxlmVNCFoCi2vFUQyQRDf+zDChT9EZYKea0FaFcirMsWY1+cp68rRAPNCmkWQGg1wDolVpuU0kRfVOBACEF9WwHWQay0KKhXfGup0E38B2hLctoSwo75EHrKf5d2pRQ+NM6Jfw+hl2FRyKxtBchDhGWtUSldWYJQkE8AtERTfc38VqbtIcx7lAxbutM34chgrG+EcIQoFuDtAYjMrwGwTC7DFQMk3MPVQVcrdUjp9QBLuoVEmqKlmyAH/tJmgIpagJXDxNyjHYEcV4rO4puok1cDJGckEG7zQIX3jb8CwPIoGt8cI+aeHAhgsRlxuALl4hIvX4WRfEU20Ka2hi8ANHanuVv/COOqc/w5bEIYIGKAuBueId6bB7sEK6ESp7cZIBQQU6yUu6sN5az/6cDx8IzgtSDXY4OXHhHUrbVmWVwcMrU0/1UkSNgHa4JY9oofWw/QDtGCPsLYS8e9G7DfgybYYGoDQJipuVt/EVmf7AtkuDJUG8JGJ4hmtNIrZ2byp8qiJDNaq0KiPnNvKXtPG8JYT3Wwgtq4BvDsDoWFNaLVXqlC2DLTtU1168L3xyES28PUjgxXgmwNwrcxRFJY1nvpaCftA3dnSowtDV8FzVX9WcQ8ORRg44xu1OcUzpwZWhzshYUFdntTLdGyhy3q/6Jp7va7YUxNgb/Nbfi6cgsqw1fRM14FUAdnJXBat8Tj+ZgokAB8L8zK5z+zh/CeQmRxKXrV24pKILnFZfJ8AuFuTw63MqdbAbDOOQvK8CqIpyNRCGyrM42ebWG4m6NE1ppcf2uLQtjJHxj9bY+uo5FeNSvDlJJj9GSNlUCxj3cEMtjYcoDVZX748sUw7vCZTtzKvGh2dlbcnVHZMd6xU7yEUEezgj7QHETSSN//Z4iVvQo5zeRh2ILfLQnEJ89ReLMhCqcc68Ulp8djFbg6Ix5rjsWd8p4+ES5gGpuZhSuHiq2Mwd/jPHgL4BUW0XiNPhprMuIwDy+jFp6ja7Ljc70CIszMyU0VFtIP3p8XYoVdYLNh/LjUH585T+FPCpQ8PLvqmnJNVvzFdg+RHIW6vdEFFdnch+KqjwY0qUISuqWXQ/CubyNwSlYvPMsDeA08K56Zdbh7z/a7yYb7gmRicRvKI0U223/9rO5yIVPuh7+/IMZrIXRVDjmveY/D2sxeWJ0Zx808/Dx+c//g6lc2T/sKGq/2uaCAi+mpRjdV+e7M0Bp3oUwAnj4vwbqcGD7vNQdNkxHLP6cdfBFP/Go0HrxpJu6xYjWm56Vx/tpjGKkKOKQuwOCHUVKevJ3lRckLJleHUgCR5EMIZdYZIGxkeAXqcpsCWAsuOf13eOqeIXhI6nQemuSDPdhfk41RMgBT6cHzAZyTa+C32YYH8PwSzcobjCbu9//Nr8PIAb0riD8tDLHx5yNOEE3FwXgdFBB3AAm8pCN98bjtE3D8yuU4POUA9iOwCDS1G2hqUKKm4DbAO45UuRsB7gzwPyFVdiSarpf85kO9TCke0OjmP1FiSgjjPKHUQBinn+lUW4Fdqi8O/z1tBO6zZjEOmXvYvdq0hfDUM0ijLwF4O0Fx09Gs3BcAWvttxKFn3OUM8dbUMCtnagix6lpHvDK/uwsV1kIl6uu6aGstOJULxWkLauB5CWnytyBVzhvtLv81WaljkNjouOGGFqfiJYmNverXICdeuhhGJpBGKiQhPGnXSNxl4TYXYasnAK1IU3iKD9PEgu7IW61cQY03OzbbsPqqyYNpxQHiWajIJGSdVUhald6rddhPnecCoP4RPDegJH0c8gUDNa5zPEO+mxzaoNk+/4OIU7uAODltOKbmfd1YhZoCyHuFqV4Vth71jkr6bP1trp5Slr3gV69Gc3EQnp0ZyzlDfGPHOBw0O7OxCtWQ/1S5g5AvGry7/NCeG++pQxm7GqHJ5pbnPcc2grhzHA7UZjcuJJqCvWhKtu++SVVfZOQyjjF0qFdjfpGMda7Ob+17GQfPSXeCSNob/WdoiM63X460g7T0p1hYNvCV2gpqXJDdo4EaSbWOXJzq1NbwVfkg0hmEN0zL68bCqqlh1fawvnwpzJacEc85hvSobZMbFxZtYRlKzJIiwfiqfY3Pj3NDa6+FgB853ala5ZQbOy3Y3jgvJudOFgjapxql9AgBCYsJbF+PbTsR2SA3Tvl6qIv5WH8FDRFC2mHOppYYnUCmwjmKoxoHbUxsGNakwKjzdAI9ByuVS14lHxG6qw6tv0K3xSBvMALGfrjCRVjnDBHoORh/PVlB36scHV5jB5n2bQRTDzIzFqr1psahnXSsi0CvUZ6kvzDHwlRTDDfDAOSJIilj7yEJSIVug7MiH6AkQ7hAzsluyCUJZrnM9nh3IN+QG68GMfb2h4R271VLnQuNVWh73O4k6UM3R4n5bTi5crcsL8ZqLzYjPn+TnKM0bMRVuX0Fai6M/1JTlOznx7sCbaR6n/ieqg9vsi4LnnO0YbFR5SYL1NwuMCTvW/pRNtgA2eBIgVuaW6tKEt4JH89zaoEKv0M6XQeBmru1WhS97tZ4EblFwZZeDrZp4KyZwJxxqD8Wpex3aoHyJwrE3Bj5ipNJLt1052/hPMxT5yU1MC6yJFdO2DkWB2iyHWFawDsL1JqESS2rel3EwM0K9ptzFANHDTzMMV9MhH1kliPMIjQ98xmBWlNhLqfGVfSjzL/sDrQVXw6xLczpYVXzx63DMT1/V13O5I9bL6JZBT0FYk1YZZfwZ+G9wq13poQ/+elEoG3XaTL1xLGJcPif8EkKDuCvmJC9ZOEdeL7r8wveZmfyblRfy3PSvfcSQx5fzw5lNn8jZ7SZsezb+17C/dYuhDOcDFDncbLQOAtz+GvCZqgZu9ZZ0h1CfvntCeHXyzaGMXvzOzML8mJs047054ZveQdHLPoc+2vJ8azhB6QqTETa3K4CtSaMfDfixrPSlyv6ilZVTQs9c+4j6uGeA12Y1Xql7f3DA9gRW6fiuNUfYtm/dj/20+gLUFLBXDTDkIAmXuoo0HNjOqjyxSg04masaOztScGLSpeI0o9vof+3J63TnfU50Vbtgf62SWkT8MCNalvsqpVV8qWfZUvnp63qOPvoZJSU8yIaf0WGYjDc+cFCg+/C/O7CdZh7wzr2ebg9YOi1zLB38k9Qcw6epNemGiI2LjjWc9sH6c9n/zVtdPZrW6ekD90yZfPADe/N67Nm/oTglKODoKUKFRA23aOSq3m8k/euHR3hp78JpAQTTDDB2o/9HwR/9etZ0VjxAAAAAElFTkSuQmCC",
+        "selectedIconData": "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"
+      },
+      {
+        "pagePath": "pages/travel/list/list.html",
+        "text": "我的行程",
+        "iconData": "iVBORw0KGgoAAAANSUhEUgAAAFIAAABUCAMAAAAmq5C0AAACcFBMVEUAAAAAAAD///+AgIBVVVWqqqqAgIBmZmaZmZmAgICAgICOjo6AgICLi4uAgICJiYmSkpKIiIiAgICHh4eGhoaMjIyGhoaLi4uQkJCKioqFhYWPj4+JiYmEhISJiYmEhISIiIiMjIyHh4eLi4uHh4eKioqKioqNjY2GhoaMjIyIiIiOjo6IiIiKioqNjY2KioqMjIyJiYmJiYmJiYmNjY2Li4uNjY2KioqMjIyKioqJiYmLi4uLi4uKioqKioqMjIyLi4uKioqLi4uJiYmNjY2Li4uLi4uJiYmMjIyKioqMjIyKioqKioqLi4uLi4uKioqKioqLi4uLi4uKioqLi4uKioqKioqMjIyLi4uKioqKioqLi4uMjIyLi4uJiYmKioqJiYmKioqLi4uKioqLi4uJiYmLi4uKioqJiYmKioqJiYmKioqLi4uKioqKioqJiYmKioqLi4uKioqJiYmLi4uKioqLi4uKioqKioqLi4uLi4uLi4uLi4uKioqKioqKioqLi4uKioqJiYmLi4uKioqLi4uKioqLi4uKioqKioqKioqLi4uKioqKioqLi4uKioqKioqKioqKioqLi4uKioqJiYmLi4uKioqLi4uKioqLi4uKioqLi4uKioqKioqKioqKioqKioqLi4uKioqKioqKioqKioqLi4uKioqLi4uJiYmKioqKioqLi4uKioqKioqKioqKioqKioqJiYmLi4uKioqJiYmKioqKioqKioqKioqKioqKioqLi4uKioqKioqLi4uKioqJiYmKioqKioqKioqKioqKioqKioqKioqKioqLi4uKioqKioqLi4uKioqOBeahAAAAz3RSTlMAAQECAwMEBQUGCAkKCwwNDg8QERMUFRYXGBkZGhscHR4fICEiIyUmKCorKy8wMTIzNDY4ODk6Oz4/QUJERkhJS0xNTk5PUVJSU1RVV1hcXmBhY2RlZmlqbG1vcHFyc3R3eHl6e319foCBgoeIjI6RkpOUlZWWlpeZmpygoqOkpaeoqausra6usLGysrO1tre5u729wMHBwsPExcbGx8nKy83O0tTV1tfY2dvd3t7f4OHi5ebm5+jo6uvt7u/v8PLz9PX19vf4+fr7/Pz9/v7s14goAAADIklEQVRYw+3Y2V9MYRzH8Q9TScnaRGQJZc2+JyG7RPZ9X8PILmVNCFlDCdn3fRtlC6VGjd+/5MI5ZsycLmbOc+Fivlfn9/xez/s15znrHAgkkEDoNO/U04rKN4VrEhSB8YfqRM+1ESrExTXinpwws6AlWzxyI8okuVm8UtTYlJgqBtluRgx7YUT+7GmCXCSGOerjOTh3k81ms9mWAZT+VUozVp2o1Yvq5sAEm2fWJgUbgCE2/ZQ5AsQ4taJ2FsDA97qZCiww+Pn3+nqTB/921wFT9GLjn26yXmcCw42WpKK3pzjR1UwHlmnbzmit/0AbOAnEGS7zDU/yjKs3CVivbX/Q+8e1gQtAlPGh89x1u6s1ym25HOFav0QbyAUijMmZHmSVqzUVSNGLtD/tLg6t3gx0MCaX1E8uB1roh98eD9C0SG8mA4N9JnMBzuvVx9X9es18qFdfwoGlPpOfGgGTjadtATjtMykpQNBjo1mOrkC0w3eyoN470Q6AFeI76ewNcNF7Unkk0MTuByn5AD2rvCal43Zh+UbKSMP72zGANp/9Ix9HAA3P/TvllRVgn/hHylYA63P3oeohAOPFX7IuEaDPd7ehOQBt7X6T8q49QKrr1WAbQGix+E9KSWOAJXqZZwHYKWZI2eP+NL8cBpAu5khZCdAwW0TkViuAYVVmSWcagOWAyG0rQK8PYpaUmhSA4MN3WwPEvRLzpPwYBRBiBYh9JipIqUzS+7FPRA0pP1K0l9cXooqU/QAkvBVlZKYFIPGzqCKdKwGYXi2qSEc6APNrRRX5dTRAg40iqsiygQChOaKMfN4doNlZUUbejgGIvinKyMKWAN2eiDIyLwxgUJkoI3dZAMZ+E1Xkr7UAzHGIKtIxG4ANv0QVWTkOIGSviCqyfChARIEoI1/2AIi6LsrIOx0B4h6JMrK4FUB/uygj88MBkitEGZkVDDCjRpSRGQCsdooq8utcgKDdIsrIMQDhx02IstDgX37kFTOiTPMWO983Jf5s5yUmvDYlSpaXaC03J16N8N7vIZfq/AfLMow/yEX2GeBn4oMC32UDCeQ/zW8iR4uMq2ZBRgAAAABJRU5ErkJggg==",
+        "selectedIconData": "iVBORw0KGgoAAAANSUhEUgAAAFIAAABUCAMAAAAmq5C0AAACfFBMVEUAAAD/AACAAAD/AACqAAC/AADMAACqAADVAAC/AADGAACzAAC5AAC/AADEAADIAADMAAC/AADDAAC8AAC/AADMAADCAAC5AADIAAC/AADCAADEAAC9AADIAADBAADDAADFAAC/AADBAADDAAC9AADFAADBAADDAAC/AADCAADEAADDAADFAADBAADHAADDAADEAADCAADEAADAAADBAADCAADBAADCAADEAADBAADFAADDAADFAADDAADEAADCAADDAADDAADBAADEAADCAADDAADBAADEAADCAADCAADDAADBAADEAADCAADCAADFAADDAADCAADDAADEAADCAADCAADDAADCAADDAADCAADCAADDAADEAADEAADDAADDAADBAADEAADDAADBAADCAADEAADDAADCAADEAADCAADDAADEAADCAADDAADDAADBAADDAADCAADBAADCAADCAADDAADBAADCAADEAADCAADBAADCAADDAADDAADCAADCAADDAADCAADCAADBAADDAADCAADDAADCAADDAADCAADDAADDAADCAADCAADBAADDAADCAADCAADDAADDAADCAADCAADCAADCAADCAADDAADDAADCAADDAADCAADCAADDAADCAADCAADDAADCAADCAADCAADDAADCAADCAADDAADDAADDAADCAADCAADCAADCAADCAADDAADCAADCAADCAADDAADCAADCAADBAADDAADCAADCAADCAADCAADDAADCAADCAADCAADCAADCAADCAADDAADCAADCAADBAADCAADCAADDAADCAADDAADCAADCAADDAADCAADDAADCAABQqHTfAAAA03RSTlMAAQICAwQFBgYICQoLDA0ODxARExQUFRYXGBkaGxwdHh8gISIjIyUmKCorLzAxMjM0Njg5Ojs+P0FCQkRGSElLTE1OTk9RUlJTVFVXV1hcXF5gYWNkZWZpamxtb3BxcnN0dHd4eXp7fX1+gIGCh4iMjI6RkpOUlZaWl5mampygoqKjpKWnqKmrq6ytrrCxsrKztba3ubu9wMHCw8TExcbHycrLzc7S1NXW19jZ293e3+Dg4eLl5ebn6Ojq6+3u7u/w8vP09fX29/j4+fn6+vv8/f7+IXic6QAAAyVJREFUWMPt2NdTE1EUx/EvElAQGyCKFRsqggV7QwV7F+wFOzYssfdesVcUFSt2UVHRCIqiggUD8fxDPrBrYrI6k+x98CG/pz33zP1M7t3Nzu6CP/74Q8vpp/JLywqzl8QrAmMPVImea31UiHN+iGt2h5gFA3eKW25GmSRXi0dyapkSx4hBNpoRQwqMyMo4E+RsMcxRL6/BaausVqvVOg/gxm/lRubiE5V68b0eMMzqniUDLAZgkFW/ZI4ATR36UicDJL7RzTHATIOff6+zJ7n/d3cZMEovVlZ3k/R6HdDbaEtKO7mLw53NVGC+duyI1voPtIGTQDvDbb7pTp519kYAy7Xjd3r/mDZwAYgyPnXuS7c5WwNdtsseqvVztYHDQJgxmeZGljtbo4FkvRhf3W5t1+o1QHNjMv3v5AKgvn76bbEAdXL0ZhLQ3WvyEMAFvSrJ6BKX9lCvPoQCc70mS4KBkcbT1gKc8ZqUZMDy2GiWvQ0QbfeePP3vO9FC8Z50dAK46DmpOAKobfOBlOMAceUek1Jx+WN5R0p/w/vbUYDG730jH4cBAef/nPIyEmCP+EbKeoCGT12HvvUAGCq+klV9ARI+uwxNBWhi85mU180AxjofDTYABF8R30nJrQmQrpdZgQCbxAwpWwFYU11cCgFIFXOkLAII2CkicjscoFe5WdIxASBwn0heJEDcWzFLSkUygOXg3UYA7V6IeVK+DgQIigSIeSIqSCkboPdj8kUNKV9StIfXAlFFyl4A4l+JMnJdDYB+70UV6VgEwMTvooq0pwIwo1JUkR8HAQSsFFFFFiUCBO8SZeSzDgB1z4kyMq8pQPQtUUZmNwBony/KyKwQgMQiUUZuDgQY8klUkT+XAjDVLqpI+xQAVvwUVWRZCkDQDhFVZHFPgLDToox83hEg6rooI++0AGj7SJSRl8MButpEGXk8FCCpVJSR2ywAkypEGZkJQIZDVJEfpwFYtogoIwcDhB4zIcosg7f8iKtmRBnnKba6b0qsbOIhxheaEmW7hxhZbE7MDfNcd4+LVb6DRZnGH+QiErr5mFiL/7usP/78p/kF1De94h/0PSkAAAAASUVORK5CYII="
+      },
+      {
+        "pagePath": "pages/order/list/list.html",
+        "text": "我的订单",
+        "iconData": "iVBORw0KGgoAAAANSUhEUgAAAFIAAABUCAMAAAAmq5C0AAABg1BMVEUAAAAAAACAgICqqqqAgIBmZmaAgICAgICOjo6AgICLi4uVlZWJiYmAgICIiIiOjo6MjIySkpKLi4uJiYmEhISOjo6JiYmIiIiHh4ePj4+Hh4eKioqOjo6IiIiLi4uHh4eKioqMjIyKioqLi4uJiYmMjIyKioqMjIyKioqKioqLi4uJiYmJiYmKioqJiYmIiIiLi4uKioqKioqMjIyKioqMjIyKioqLi4uJiYmMjIyLi4uKioqJiYmLi4uLi4uKioqJiYmKioqLi4uKioqLi4uKioqLi4uKioqJiYmKioqLi4uJiYmKioqLi4uLi4uKioqLi4uKioqLi4uKioqKioqLi4uLi4uKioqLi4uKioqLi4uKioqKioqLi4uKioqKioqLi4uKioqLi4uLi4uKioqKioqLi4uKioqKioqKioqKioqLi4uKioqKioqKioqKioqJiYmKioqKioqKioqKioqKioqLi4uJiYmLi4uKioqKioqKioqKioqKioqLi4uKioqKiordaCghAAAAgHRSTlMAAQIDBAUGCAkKCwwNDg8SFBUWGhsbHB4gICIjJCsuMT0+P0RFRUZJSkxPUFJTVFZYWV5fZmprbHBzd3h5eXt8gIWIiYqMjY6PlJWanZ6gqLCztLW3t7i/wcLDxsjIycvMzc7Q0dfZ3N7h4uLj5Ofp6uvt7vDx8fPz9Pb4+/z8/dILQH4AAAF/SURBVFjDY2AYBaOAekAkuKKGLFAZIYfDyIAGskE2O3YjS8g3skELu5E1FBhpNGrkqJGjRg4lI5McbdCBSzpFRoYyYZHmSKHESF2s8qaUGKmDVd6EEiNDsHmcOYqi6Im1NUMH9gmjSX3UyGFnZL27ghxuoOBUQ7qRXgTaeB6kG6lOwEh10o00JmCkPulGpgrjNVEgkYwYr4gMwg3CS0aT+qiRA2NkWS5uUEaOkcUqjPhyj2IB6UZaEsjjFqQbqUbASFXSjbQmYKQ56UaWGvDgMZBTq3A0qY8aOWrkqJGjRoJBFhZNpZgVTkkJsUYWaTOb56PprnLh53WuRhGq8xaUiiPOyGhxIJvbrghJd62PGEiBTCCSWKQ8UITVqR6vkWCX1TuzQHh8DnBvBcrClGikQYVyDGE1Wx6Yr4ndSFegVKYygs/vBvZpjBKSGjarcqBQtSMXXEQoBCiQwYHdSDbXeHc+FBFJ3+QwPTRVop4JftLIAoymMf4SoyPpo2CwAwBz3wAdn5vK6gAAAABJRU5ErkJggg==",
+        "selectedIconData": "iVBORw0KGgoAAAANSUhEUgAAAFIAAABUCAMAAAAmq5C0AAABlVBMVEUAAAD/AACAAAD/AACqAAD/AAC/AADMAACqAADVAAC/AADGAACzAAC5AAC/AADEAADIAAC7AADGAAC/AADCAADFAADEAAC9AADGAAC/AADDAAC/AADHAADDAADFAADGAADEAADCAADBAADAAADEAADBAADCAADDAADAAADEAADFAADEAADBAADDAADCAADFAADCAADBAADCAADCAADBAADCAADDAADDAADEAADDAADDAADBAADEAADCAADDAADDAADDAADCAADEAADDAADBAADBAADEAADDAADCAADCAADEAADDAADDAADEAADCAADDAADDAADCAADDAADDAADCAADCAADCAADCAADCAADCAADDAADCAADCAADCAADDAADDAADCAADCAADDAADCAADDAADCAADCAADCAADCAADCAADBAADCAADCAADCAADDAADCAADCAADBAADCAADDAADCAADCAADCAADDAADCAADBAADCAADCAADDAADCAADCAADCAADBAADCAADCAADCAADCAADDAADCAACvHlQRAAAAhnRSTlMAAQICAwMEBQYGCAkKCwwNDg8SFBUWGhsbHB4gICIjJCsuMT09Pj9ERUVGSUpMT09QUlNUVlhZXl9mamtscHN3eHl5e3yAhYiJioqMjY6PlJWanZ6gqLCztLW3uL/BwsPGyMjJy8zNztDR19nc3uHi4+Tn6err7e3u8PDx8fP09vj4+/z9/bQQ89MAAAF+SURBVFjDY2AYBaOAekA8sraJLFAXq4jDyLA2skE+F3YjK8k3sk0Pu5FNFBhpPmrkqJGjRg4lI9PdHNGBVw5FRkYxY5HmzqTESCOs8laUGGmIVd6SIo8zYZFmiacoepKcrNGBS+poUh81ctgZ2eKroogbKLs3kW5kAIE2nh/pRmoTMFKbdCMtCBhpQrqRWWJ4TRROIyPGa+MicIOYqtGkPmrkwBhZU4gb1JBjZIUGI77co1pCupF2BPK4LelGahEwUpN0Ix0IGGlDupHVpvx4DOTRLx1N6qNGjho5auSokZCBPiyaqjErnMoqYo0sM2C1KUbTXe8pJODRiCLUHCgim0yckQlSQDafczmy7iBJkAL5cCSxOCWgCLt7K14jwS5r9WCD8ARd4d4KV4Ap0cmGChWYwWq2IjBfF7uR3kCpPHUEX8gH7NNENSQ1nPa1QKEGN164iGgUUCCXG7uRHN4pvoIoIjLBGdHGaKok/FND5JAFGK2SQqVHR9JHwWAHAF8KVkt9tIAmAAAAAElFTkSuQmCC"
+      },
+      {
+        "pagePath": "pages/user/index/index.html",
+        "text": "个人中心",
+        "iconData": "iVBORw0KGgoAAAANSUhEUgAAAFIAAABUCAMAAAAmq5C0AAAB9VBMVEUAAAAAAAD///+AgIBVVVWqqqqAgICAgICSkpKAgICOjo6AgICZmZmLi4uAgICAgICSkpKIiIiPj4+Hh4eOjo6GhoaMjIyLi4uFhYWFhYWPj4+Ojo6MjIyHh4eLi4uHh4eKioqKioqMjIyLi4uLi4uNjY2KioqJiYmLi4uNjY2KioqMjIyKioqMjIyKioqLi4uJiYmLi4uJiYmMjIyLi4uKioqLi4uLi4uJiYmMjIyKioqKioqLi4uKioqJiYmKioqMjIyJiYmLi4uKioqLi4uKioqLi4uLi4uJiYmMjIyKioqLi4uKioqLi4uLi4uJiYmMjIyKioqKioqJiYmKioqKioqLi4uKioqKioqLi4uKioqKioqKioqLi4uKioqKioqKioqLi4uKioqJiYmLi4uKioqJiYmLi4uKioqJiYmMjIyLi4uKioqLi4uKioqKioqKioqKioqLi4uKioqKioqKioqLi4uKioqLi4uKioqKioqKioqKioqLi4uKioqKioqLi4uKioqLi4uLi4uLi4uKioqJiYmKioqKioqKioqKioqKioqLi4uKioqKioqKioqLi4uKioqLi4uKioqJiYmKioqKioqKioqKioqKioqLi4uKioqKioqKioqKioqKioqKioqKioqLi4uKioqKioqLi4uKioquqDpbAAAApnRSTlMAAQECAwMEBgcICQoKCwwODg8QERITFBYXGRkbHyAhIiMlKiwuLzI0Nzg7PD0+P0BDREVHS0xNUVJSU1VYWVteX2FhYmNkZWdoamtsb3Byc3N0dnd4ent8fn+Bg4WGiYuMlZiampucnJ2en6ChoqSmqKqtr7GytLW2t7m6vL2+v8HJyszOz9DR0tXW2Nvc4ePk5ebn6Ons7vDx8/T19/n6+/z8/f7+3Zv5CQAAAgtJREFUGBntwelbzFEYBuCnRg2SSIoQkT3ZKXsGWcuaJUuW7Fu0IIrsY5mShjZNmp6/0wfXZWvOOb/3nfFt7htJSf9fWsmphmDX146XdyuLkAj5Z7v429v9GYhTxpkB/q07kIJ4LHjP0VryoFc2wFhCc6G1eYixhedBZ/k3moTyoTHtE83afFC4Q5s9kFsyQpsvkyH2kHbVkCqI0u6jD0LH6LIMQq10qYFMaj9dHkNmJp1CkFlEpwhkVtBtPESK6TSSBpEiOvVCJjNKl1cQ+kCXWxCqo0sAQmvpEMmDUHoX7Rohdph2xRCbGKLNAyiU0aJvDjQu0mw7VMa20qQWSllPGdv5FGiNu80YIkcQj/Iw//VuKeKTW9vHP3Ue8CNu2RUt/fwpXF/qR2L4izbs3Fe+pjAVCTBm9uqtew/+Url7S8l0xKHw6KNejtZdX5ELDf+29hGaDDatgpRvVyftXqyEyMLXdGvIh2e+44P0IlwKjzLv06PoSXiS3U7vrvngNukZJa6kwMXXTJkTcDlNoeF1sFs8RKnPU2GTHqTcTdhUUGF4Psz8ndRogNkmqnyfBaMn1KmByZQIdd7AZCOVojNgcI5a62HQTK1qGASpVQeDDmrVwyBMrUYYBKl1GQZXqbUDBiVU6smByT3qVMEo6zk1rsNiwoUIpXqqYFdw6EZTs3eNlwI5SEpKSpQfsyNLo+db3mIAAAAASUVORK5CYII=",
+        "selectedIconData": "iVBORw0KGgoAAAANSUhEUgAAAFIAAABUCAMAAAAmq5C0AAACBFBMVEUAAAD/AACAAAD/AACqAAD/AAC/AACqAADVAAC2AAC/AADGAADMAAC5AADRAAC/AADIAADMAAC/AADPAADDAADGAAC8AAC/AADMAADFAAC8AADCAADGAADFAAC/AADBAADDAADFAADBAADCAAC/AADCAADDAADCAADEAADDAADEAADCAADDAADAAADEAADBAADCAADDAADCAADDAADAAADCAADFAADDAADAAADDAADEAADCAADDAADCAADDAADBAADDAADEAADDAADDAADBAADCAADCAADEAADCAADDAADBAADCAADDAADEAADDAADBAADDAADBAADCAADDAADDAADCAADDAADBAADCAADDAADCAADDAADCAADCAADDAADCAADDAADDAADDAADCAADDAADCAADDAADDAADCAADCAADCAADDAADDAADCAADDAADCAADCAADDAADDAADCAADCAADBAADDAADCAADCAADDAADCAADCAADDAADCAADCAADDAADCAADCAADCAADCAADDAADCAADDAADCAADCAADCAADCAADCAADCAADCAADDAADDAADBAADCAADDAADCAADCAADCAADBAADCAADBAADCAADCAADBAADCAADCAADBAADCAADDAADCAADCAADCAADDAADCAADCAADCAADDAADCAADDAADCAADbeWfDAAAAq3RSTlMAAQICAwMEBgYHCAkKCwsMDg8QEBESExQUFhcZGx8gISIjJSosLi8yNDc4Ozw9PT4/QENERUdLTE1RUlNVWFlbXl9hYmNkZWdoamtsb3Byc3N0dnd4ent8fn+Bg4WGiYuMlZiampucnZ6foKGipKaoqqqtr7GysrS1tre5ury9vr/BycrMzs/Q0dLV1tjb3OHj4+Tl5ufo6ezs7vDx8/T09ff5+vr7/P39/v60s7cKAAACDklEQVQYGe3B6VvMURgG4GcqGYQsIYOI7Et2xj4ha1mzZMlS9iVKIYrsY6skQ1GYmJ5/0gfXZWvOOb/3nfFt7hspKf/fgMLDNeH2D62PrpQUIBkCx9r527MdWUhQ1tEe/q2jyIdEzHjB/hpyoRfsYTyvp0JrbS/ji0yDzsLPNGkJQGP8G5o1pUPhMm22Qm5OH23ej4DYLdqVQSovRrtXaRDaT5cFEGqkSzlkfN10uQOZiXRqgcwsOkUhs4huQyAyn059GRApoFMXZIbF6PIYQi/pchFClXQpgtByOkRzIZTZTrsbENtDu3kQG95Cm5tQCNLi0xRonKJZCCqDGmlSAaXse4zvhA9agy8xjuheJCIU4b+ez0VixlZ85J/advqRsFHFDd38KVId9CM5/AWrNm0PLcv3IQkyJi9dv23XLyVb1hUGkID8fbe72F9HdfE4aAzc0NxHk691SyCVvrmNdg8XQ2TmE7rVBOBZ2oEv9OJdEB4NvU6PYofgychmenc2DW7Z9ylR5YNLej1lDsLlCIW+r4Dd7F5KvR0Dm8ww5S7AppgK36bDzN9GjRqYraFK7yQY3aVOOUxGR6nzFCarqRSbAIPj1FoJg3pqlcEgTK1KGLRS6yoMItSqhUGYWlUwOEOtjTAopFJnDkyuUacURtkPqHEOFlkno5TqLIVd3u7zdfXe1Z4uykFKSkqy/ADzxXpGzaQ1KQAAAABJRU5ErkJggg=="
+      }
+    ]
+  },
+  "renderer": {
+    "allUsed": ["webview"],
+    "default": "webview"
+  }
+}
