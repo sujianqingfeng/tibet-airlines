@@ -540,17 +540,17 @@ define("configs/request.js", function(require, module, exports, window, document
         r = ["-102", "-11", "-12", "-200", "E190017", "E190018", "040009", "E190005", "000003", "000004", "E102006"];
     module.exports = function(c, l, u) {
         (c = c || {}).method = c.method || "POST", c.header = c.header || {}, c.header.Accept = c.header.Accept || "application/json", c.header["content-type"] = c.header["content-type"] || "application/json;charset:utf-8;";
-        var d = c.data,
+        var xxxxxx = c.data,
             g = getCurrentPages(),
             f = g[g.length - 1],
             p = g.length > 0 && f && "pages/ticket/index/index" === f.route,
             h = (0, e.getStore)("tv_login"),
             w = Number((0, e.getStore)("tv_timediff"));
-        if (d.timestamp = Date.parse(new Date) / 1e3 - w, (0, e.getStore)("tv_preTime")) {
+        if (xxxxxx.timestamp = Date.parse(new Date) / 1e3 - w, (0, e.getStore)("tv_preTime")) {
             var C = (0, e.getStore)("tv_preTime"),
                 x = c.url.split(getApp().globalData.servsers)[1];
-            if (d.timestamp - C > 300 && -1 !== x.indexOf(i));
-            else if (d.timestamp - C > 7200 - Math.abs(w)) return 0 == h || !h || p ? ((0, e.loginClear)(), (0, e.loginToken)("expire")) : l || p ? s() : wx.showModal({
+            if (xxxxxx.timestamp - C > 300 && -1 !== x.indexOf(i));
+            else if (xxxxxx.timestamp - C > 7200 - Math.abs(w)) return 0 == h || !h || p ? ((0, e.loginClear)(), (0, e.loginToken)("expire")) : l || p ? s() : wx.showModal({
                 content: "由于您长时间未操作，页面可能发生变化，请稍后重试",
                 confirmColor: "#c20000",
                 showCancel: !1,
@@ -561,7 +561,7 @@ define("configs/request.js", function(require, module, exports, window, document
             }), !1
         }
         if ((0, e.getStore)("tv_token")) {
-            if (c.data.token = (0, e.getStore)("tv_token"), c.data.strValue = JSON.stringify(d.strValue), c.data.sign = o.getSign(d), 1 !== l || 0 != h && h) {
+            if (c.data.token = (0, e.getStore)("tv_token"), c.data.strValue = JSON.stringify(xxxxxx.strValue), c.data.sign = o.getSign(xxxxxx), 1 !== l || 0 != h && h) {
                 var m = this,
                     k = function(e, t) {
                         e = !!e, t = !!t, 1 === u && (t ? m.setData({
@@ -577,7 +577,7 @@ define("configs/request.js", function(require, module, exports, window, document
                     if (k(!1, !0), 502 !== o.statusCode && 504 !== o.statusCode)
                         if (-1 != o.data.statusCode)
                             if ("-1101" != o.data.statusCode) {
-                                if (0 == o.data.statusCode)(0, e.setStore)("tv_preTime", d.timestamp);
+                                if (0 == o.data.statusCode)(0, e.setStore)("tv_preTime", xxxxxx.timestamp);
                                 else {
                                     if ("-103" == o.data.statusCode) return wx.showLoading({
                                         title: "正在登录"
