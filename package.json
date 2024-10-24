@@ -1,8 +1,8 @@
 {
-  "name": "174",
+  "name": "tibet-airlines",
   "version": "1.0.0",
   "description": "",
-  "main": "app-service.js",
+  "main": "sign.js",
   "type": "module",
   "scripts": {
     "test": "vitest"
@@ -13,7 +13,6 @@
   "dependencies": {
     "crypto-js": "^4.2.0",
     "node-fetch": "^3.3.2",
-    "node-rsa": "^1.1.1",
     "nodejs-jsencrypt": "3.0.0-rc.1"
   },
   "devDependencies": {

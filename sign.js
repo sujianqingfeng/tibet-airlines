@@ -2,54 +2,11 @@ import fetch from "node-fetch";
 import CryptoJS from "crypto-js";
 import { JSEncrypt } from "nodejs-jsencrypt";
 
-const servsers = "https://wechat.tibetairlines.com.cn/xcx-rest/api";
+const BASE_URL= "https://wechat.tibetairlines.com.cn/xcx-rest/api";
 
 const User_Agent =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 MicroMessenger/7.0.20.1781(0x6700143B) NetType/WIFI MiniProgramEnv/Windows WindowsWechat/WMPF WindowsWechat(0x63090c11)XWEB/11275";
 
-// function getToken() {
-// post
-// https://wechat.tibetairlines.com.cn/xcx-rest/api/token
-
-// {
-//   "localToken": "",
-//   "expired": true
-// }
-
-//   {
-//   "createNewSession": false,
-//   "data": {
-//     "needSetAesKey": true,
-//     "publicKey": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCrnhhbpNxi85V8zomUhgvFDMLltASlnuh4yOeU/okh/ZNGEpJUFlu8+Rn9wuQgj5yGjM6uXn55Lez5YFM5lTeXw4fB91irrUUKgInyALF5LdnRBG84rFRWdotX41TqJzK8Kl91H5R4bQVN7tf8uEP1kEo9hR7SYopamyXBMg4ilQIDAQAB",
-//     "responseTime": "1729608064",
-//     "token": "77b6fb31950d4148894d6eb747eaadfd",
-//     "transferSuccess": false
-//   },
-//   "errorStack": null,
-//   "statusCode": "0",
-//   "statusMsg": ""
-// }
-
-// ----aes
-
-// post aes
-
-// https://wechat.tibetairlines.com.cn/xcx-rest/api/token/aes
-
-// {
-//   "aesKey": "dDJrlM9a7JcEDNf0IKMDstqop09oSNtOrxyzHVPtuKjw6XaG/wTAqU9eqVrXw3N0GNnuFLYL69s6Xw/OgoCEr00j9VzFyTtlu0fA7M51mWzafXQKVlCyzdke+MwVv74f0pQd9PrJ5S+ApCG3FPuRQCOBkCBviqFaWLvWzydzj1Q=",
-//   "token": "77b6fb31950d4148894d6eb747eaadfd"
-// }
-
-// {
-//   "createNewSession": false,
-//   "data": null,
-//   "errorStack": null,
-//   "statusCode": "0",
-//   "statusMsg": ""
-// }
-
-// }
 
 const headers = {
   "User-Agent": User_Agent,
@@ -133,30 +90,16 @@ function getKeyId() {
   return t;
 }
 
-// function generateAesKey(randomKey,publicKey) {
-//     // Convert the random key to Base64
-//     const keyBase64 = CryptoJS.enc.Base64.stringify(randomKey);
-
-//     // Use JSEncrypt to encrypt the Base64 key with the public key
-//     const encrypt = new JSEncrypt();
-//     encrypt.setPublicKey(publicKey);
-//     const encryptedKey = encrypt.encrypt(keyBase64);
-
-//     return encryptedKey;
-// }
-
-function generateAesKey(randomKey, publicKey) {
+function generateAesKey(keyId, publicKey) {
   const pk = `-----BEGIN PUBLIC KEY-----${publicKey}-----END PUBLIC KEY-----`;
-
   const encrypt = new JSEncrypt();
   encrypt.setPublicKey(pk);
-  const encrypted = encrypt.encrypt(randomKey);
-
+  const encrypted = encrypt.encrypt(keyId);
   return encrypted;
 }
 
 function getToken() {
-  return fetch("https://wechat.tibetairlines.com.cn/xcx-rest/api/token", {
+  return fetch(`${BASE_URL}/token`, {
     method: "POST",
     body: JSON.stringify({
       localToken: "",
@@ -171,7 +114,6 @@ function getToken() {
         statusCode,
       } = res;
       if (statusCode === "0" && publicKey) {
-        console.log("🚀 ~ .then ~ token:", token);
         return { token, publicKey };
       } else {
         throw new Error("Failed to get token");
@@ -180,7 +122,7 @@ function getToken() {
 }
 
 function setAesKey(token, aesKey) {
-  return fetch("https://wechat.tibetairlines.com.cn/xcx-rest/api/token/aes", {
+  return fetch(`${BASE_URL}/token/aes`, {
     method: "POST",
     body: JSON.stringify({
       aesKey: aesKey,
@@ -198,7 +140,7 @@ function setAesKey(token, aesKey) {
     });
 }
 
-function getSign(params, okey, oiv) {
+export function getSign(params, oKey, oIv) {
   // 1. 排序参数
   const sortedKeys = Object.keys(params).sort();
   let paramStr = "";
@@ -213,8 +155,8 @@ function getSign(params, okey, oiv) {
   }
 
   // 3. 获取密钥
-  const key = CryptoJS.enc.Utf8.parse(okey);
-  const iv = CryptoJS.enc.Utf8.parse(oiv);
+  const key = CryptoJS.enc.Utf8.parse(oKey);
+  const iv = CryptoJS.enc.Utf8.parse(oIv);
 
   // 4. 加密
   const encrypted = CryptoJS.AES.encrypt(paramStr, key, {
@@ -245,13 +187,8 @@ function generateBody({ strValue, token, key, iv }) {
   };
 }
 
-function fetchList({ token, key, iv }) {
-  const body = generateBody({ strValue: { baChannel: 1 }, token, key, iv });
-  console.log("🚀 ~ fetchList ~ body:", body);
-
-  return fetch(
-    "https://wechat.tibetairlines.com.cn/xcx-rest/api/icon/getlist",
-    {
+function fetchList(body) {
+  return fetch(`${BASE_URL}/icon/getlist`, {
       method: "POST",
       body: JSON.stringify(body),
       headers,
@@ -265,23 +202,18 @@ function sleep(ms) {
 
 async function main() {
   const keyId = getKeyId();
-  console.log("🚀 ~ main ~ keyId:", keyId);
   const { token, publicKey } = await getToken();
-  console.log("🚀 ~ main ~ publicKey:", publicKey);
-  console.log("🚀 ~ main ~ token:", token);
-
+  console.log("🚀 ~ main ~ token:", token)
+  console.log("🚀 ~ main ~ publicKey:", publicKey)
   const aesKey = generateAesKey(keyId, publicKey);
-  console.log("🚀 ~ main ~ aesKey:", aesKey);
-
+  console.log("🚀 ~ main ~ aesKey:", aesKey)
   await sleep(1000);
   await setAesKey(token, aesKey);
-
   await sleep(1000);
-  const list = await fetchList({
-    token: token,
-    key: keyId,
-    iv: keyId,
-  });
+
+  const body = generateBody({ strValue: { baChannel: 1 }, token, key: keyId , iv: keyId });
+
+  const list = await fetchList(body);
   console.log("🚀 ~ main ~ list:", list);
 }
 
